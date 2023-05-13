@@ -1,0 +1,149 @@
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url("1.jpg");
+	background-size: cover;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+  h1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	color: #fff;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  form {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: 10px solid gray ;
+  font-weight: bold;
+  border-radius: 10px;
+  opacity: 0.9;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+  }
+  
+  input[type="text"], input[type="email"] ,input[type="mobile"],input[type="Date"],input[type="Address"], input[type="number"], select {
+	width: 100%;
+
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  
+  select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 8 8'%3E%3Cpath fill='%23333' d='M.223 2.223c-.197.196-.197.515 0 .712l3.279 3.279c.196.196.515.196.712 0l3.279-3.279c.196-.196.196-.515 0-.712L4.214.223c-.197-.197-.515-.197-.712 0L.223 2.223z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	background-size: 8px 8px;
+  }
+  
+  input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: centre;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #3e8e41;
+  }
+  
+  input[type="submit"]:active {
+	background-color: #3e8e41;
+	transform: translateY(1px);}

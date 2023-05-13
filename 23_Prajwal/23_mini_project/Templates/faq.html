@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatbot Example</title>
+    <link rel="stylesheet" type="text/css" href="/static/style3.css">
+</head>
+<body>
+	<div>
+		<nav>
+			<ul>
+			  <li><a href="/chart">Pie Chart</a></li>
+			  <li><a href="/faq">FAQ</a></li>
+			  <li><a href="/data">CSV</a></li>
+			</ul>
+		  </nav>
+		</div>
+
+	<h1>FAQ</h1>
+	
+	<form method="POST">
+		<label for="message">Ask a question:</label><br>
+		<input type="text" id="message" name="message"><br>
+		<input type="submit" value="Submit">
+	</form>
+	{% if message %}
+	<p>You: {{ message }}</p>
+	{% endif %}
+	{% if response %}
+	<p>Bot: {{ response }}</p>
+	{% endif %}
+</body>
+</html>
+
